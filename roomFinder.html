@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayFinder | Find Rooms</title>
+    <link rel="stylesheet" href="styles/roomFinder.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="userForm-Container">
+            <h2>Find Your Hostel/Room/PG</h2>
+            <div class="box">
+                <h3>Find Room By Rent/Room:</h3>
+                <div id="box1">
+                    Minimum Rent:
+                    <input type="number" placeholder="0" class="js-minrent-input">
+                    <br><br>
+                    Maximum Rent:
+                    <input type="number" placeholder="0" class="js-maxrent-input">
+                </div>
+            </div>
+            <br>
+
+            <div class="box">
+                <h3>Find Room By Location:</h3>
+                <div id="box1">
+                    Your Location:
+                    <input type="text" placeholder="Enter Your Area" class="js-location-input">
+                </div>
+            </div>
+            <br>
+            <div>
+                <button type="submit" class="findbtn">Find</button>
+                <p class="error-msg"></p>
+            </div>
+        </div>
+    
+        <div class="js-roomList roomList"></div>
+    </div>
+
+    <script type="module" src="scripts/roominfo.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayFinder | Find Mess</title>
+    <link rel="stylesheet" href="styles/messFinder.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="userForm-Container">
+            <h2>Find Your Mess</h2>
+            <div class="box">
+                <h3>Find Mess By Fees:</h3>
+                <div id="box1">
+                    Minimum Fee:
+                    <input type="number" placeholder="0" class="js-minfee-input">
+                    <br><br>
+                    Maximum Fee:
+                    <input type="number" placeholder="0" class="js-maxfee-input">
+                </div>
+                
+            </div>
+            <br>
+            <div class="box">
+                <h3>Find Mess By Area:</h3>
+                <div id="box1">
+                    Your Area:
+                    <input type="text" placeholder="Enter Your Area" class="js-area-input">
+                </div>
+            </div>
+            <br>
+            <div class="btn">
+                <button type="submit" class="findbtn">Find</button>
+                <p class="error-msg"></p>
+
+            </div>
+        </div>
+
+        <div class="js-messList messList"></div>
+
+    </div>
+    <!-- <script src="scripts/messDatabase.js"></script> -->
+    <script type="module" src="scripts/messinfo.js"></script>
+</body>
+</html>
